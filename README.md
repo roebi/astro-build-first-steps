@@ -52,3 +52,41 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## npm create astro@latest log / choices
+
+$ npm create astro@latest
+Need to install the following packages:
+  create-astro@3.1.11
+Ok to proceed? (y)
+
+    astro   v2.10.1 Launch sequence initiated.
+
+      dir   Where should we create your new project?
+            ./
+
+     tmpl   How would you like to start your new project?
+            Include sample files
+        ✔  Template copied
+
+     deps   Install dependencies?
+            Yes
+        ✔  Dependencies installed
+
+       ts   Do you plan to write TypeScript?
+            Yes
+
+      use   How strict should TypeScript be?
+            Strict
+        ✔  TypeScript customized
+
+      git   Initialize a new git repository?
+            Yes
+        ✔  Git initialized
+
+     next   Liftoff confirmed. Explore your project!
+            Run npm run dev to start the dev server. CTRL+C to stop.
+            Add frameworks like react or tailwind using astro add.
+
+            Stuck? Join us at https://astro.build/chat
+
