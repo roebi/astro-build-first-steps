@@ -133,4 +133,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
      base: '/astro-build-first-steps'
 
 add file .github/workflows/deploy.yml
-wtih content from docu
+with content from docu
