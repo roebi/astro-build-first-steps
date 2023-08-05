@@ -122,3 +122,15 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
                --silent  Disable all logging.
               --version  Show the version number and exit.
                  --help  Show this help message.
+
+## Deploy your Astro Site to GitHub Pages
+
+ https://docs.astro.build/en/guides/deploy/github/
+
+ extend astro.config.mjs with
+
+     site: 'https://roebi.github.io',
+     base: '/astro-build-first-steps'
+
+add file .github/workflows/deploy.yml
+wtih content from docu
