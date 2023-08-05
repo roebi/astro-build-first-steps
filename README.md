@@ -55,10 +55,10 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## npm create astro@latest log / choices
 
-$ npm create astro@latest
-Need to install the following packages:
-  create-astro@3.1.11
-Ok to proceed? (y)
+    $ npm create astro@latest
+    Need to install the following packages:
+      create-astro@3.1.11
+    Ok to proceed? (y)
 
     astro   v2.10.1 Launch sequence initiated.
 
@@ -90,3 +90,35 @@ Ok to proceed? (y)
 
             Stuck? Join us at https://astro.build/chat
 
+## npm run astro -- --help 
+
+    $ npm run astro -- --help
+
+    > astro
+    > astro --help
+
+
+       astro  v2.10.1 Build faster websites.
+
+      astro [command] [...flags]
+
+       Commands
+                    add  Add an integration.
+                  build  Build your project and write it to disk.
+                  check  Check your project for errors.
+                    dev  Start the development server.
+                   docs  Open documentation in your web browser.
+                   info  List info about your current Astro setup.
+                preview  Preview your build locally.
+                   sync  Generate content collection types.
+              telemetry  Configure telemetry settings.
+
+       Global Flags
+        --config <path>  Specify your config file.
+          --root <path>  Specify your project root folder.
+           --site <url>  Specify your project site.
+      --base <pathname>  Specify your project base.
+              --verbose  Enable verbose logging.
+               --silent  Disable all logging.
+              --version  Show the version number and exit.
+                 --help  Show this help message.
