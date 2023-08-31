@@ -1,3 +1,47 @@
+# Astro Starter Kit: Upgrade Astro to V3
+
+following
+
+https://docs.astro.build/en/guides/upgrade-to/v3/
+
+```
+npm install astro@latest
+```
+
+in package json change project Version to "version": "0.3.0"
+
+```
+npm install
+```
+
+Moved: astro check now requires an external package
+
+```
+npm run astro check
+```
+
+just press 'Y' and astro calls
+
+```
+npm install @astrojs/check typescript
+```
+
+add all astro default commands as shortcut commands in package.json:
+```
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build",
+    "check": "astro check",
+    "dev": "astro dev",
+    "docs": "astro docs",
+    "info": "astro info",
+    "preview": "astro preview",
+    "start": "astro dev",
+    "sync": "astro sync",
+    "telemetry": "astro telemetry"
+  },
+```
+
 # Astro Starter Kit: Basics
 
 ```
