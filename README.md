@@ -1,3 +1,19 @@
+# Astro Starter Kit: Upgrade Astro to V3
+
+following
+
+https://docs.astro.build/en/guides/upgrade-to/v3/
+
+```
+npm install astro@latest
+```
+
+in package json change project Version to "version": "0.3.0"
+
+```
+npm install
+```
+
 # Astro Starter Kit: Basics
 
 ```
