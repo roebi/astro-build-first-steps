@@ -3,13 +3,20 @@
   "type": "module",
   "version": "0.3.0",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "astro": "astro",
     "build": "astro build",
+    "check": "astro check",
+    "dev": "astro dev",
+    "docs": "astro docs",
+    "info": "astro info",
     "preview": "astro preview",
-    "astro": "astro"
+    "start": "astro dev",
+    "sync": "astro sync",
+    "telemetry": "astro telemetry"
   },
   "dependencies": {
-    "astro": "^3.0.3"
+    "@astrojs/check": "^0.2.0",
+    "astro": "^3.0.3",
+    "typescript": "^5.2.2"
   }
 }
