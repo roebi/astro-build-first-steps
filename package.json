@@ -13,6 +13,7 @@
     "prettier:check": "npx prettier --check .",
     "prettier:listdifferent": "npx prettier --list-different .",
     "prettier:write": "npx prettier --write .",
+    "prepare": "husky install",
     "preview": "astro preview",
     "start": "astro dev",
     "sync": "astro sync",

@@ -4,14 +4,10 @@
 npm i --save-dev prettier prettier-plugin-astro
 ```
 
-```
-npm install husky --save-dev
-npx husky install
-```
-
 add file .prettierignore with similar content as .gitignore
 
 add file .editorconfig with content
+
 ```
 # EditorConfig https://EditorConfig.org
 
@@ -31,6 +27,7 @@ max_line_length = 120
 ```
 
 add this scripts to package.json:
+
 ```
     "prettier:help": "npx prettier --help",
     "prettier:check": "npx prettier --check .",
@@ -39,6 +36,7 @@ add this scripts to package.json:
 ```
 
 add file prettier.config.cjs with content
+
 ```
 /** @type {import("prettier").Config} */
 const config = {
@@ -53,6 +51,7 @@ with this the use of
 ```
 npm run prettier:check
 ```
+
 show you a warn list of file with not correct format
 
 based on .editorconfig settings
@@ -62,6 +61,28 @@ npm run prettier:write
 ```
 
 write the corrected file
+
+# add husky
+
+install husky
+
+```
+npm install husky --save-dev
+npm pkg set scripts.prepare="husky install"
+npm run prepare
+```
+
+Add a hook:
+
+npx husky add .husky/pre-commit "npm run prettier:write"
+git add .husky/pre-commit
+
+now try a commit:
+
+```
+git commit -m "Keep calm and commit"
+# `npm run prettier:write` will run
+```
 
 # Astro Starter Kit: Upgrade Astro to V3
 
