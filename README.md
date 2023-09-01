@@ -1,3 +1,68 @@
+# add Prettier Plugin for Astro
+
+```
+npm i --save-dev prettier prettier-plugin-astro
+```
+
+```
+npm install husky --save-dev
+npx husky install
+```
+
+add file .prettierignore with similar content as .gitignore
+
+add file .editorconfig with content
+```
+# EditorConfig https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+indent_style = space
+indent_size = 2
+
+max_line_length = 120
+```
+
+add this scripts to package.json:
+```
+    "prettier:help": "npx prettier --help",
+    "prettier:check": "npx prettier --check .",
+    "prettier:listdifferent": "npx prettier --list-different .",
+    "prettier:write": "npx prettier --write .",
+```
+
+add file prettier.config.cjs with content
+```
+/** @type {import("prettier").Config} */
+const config = {
+  plugins: ["prettier-plugin-astro"],
+};
+
+module.exports = config;
+```
+
+with this the use of
+
+```
+npm run prettier:check
+```
+show you a warn list of file with not correct format
+
+based on .editorconfig settings
+
+```
+npm run prettier:write
+```
+
+write the corrected file
+
 # Astro Starter Kit: Upgrade Astro to V3
 
 following
@@ -27,6 +92,7 @@ npm install @astrojs/check typescript
 ```
 
 add all astro default commands as shortcut commands in package.json:
+
 ```
   "scripts": {
     "astro": "astro",
@@ -134,7 +200,7 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
             Stuck? Join us at https://astro.build/chat
 
-## npm run astro -- --help 
+## npm run astro -- --help
 
     $ npm run astro -- --help
 
@@ -169,9 +235,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Deploy your Astro Site to GitHub Pages
 
- https://docs.astro.build/en/guides/deploy/github/
+https://docs.astro.build/en/guides/deploy/github/
 
- extend astro.config.mjs with
+extend astro.config.mjs with
 
      site: 'https://roebi.github.io',
      base: '/astro-build-first-steps'

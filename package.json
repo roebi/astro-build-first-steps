@@ -9,6 +9,10 @@
     "dev": "astro dev",
     "docs": "astro docs",
     "info": "astro info",
+    "prettier:help": "npx prettier --help",
+    "prettier:check": "npx prettier --check .",
+    "prettier:listdifferent": "npx prettier --list-different .",
+    "prettier:write": "npx prettier --write .",
     "preview": "astro preview",
     "start": "astro dev",
     "sync": "astro sync",
@@ -18,5 +22,10 @@
     "@astrojs/check": "^0.2.0",
     "astro": "^3.0.6",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }
