@@ -3,7 +3,7 @@
 # top-most EditorConfig file
 root = true
 
-[{README.md, package.json,.husky/pre-commit}]
+[{README.md, package.json, .husky/pre-commit}]
 end_of_line = crlf
 
 [*]
