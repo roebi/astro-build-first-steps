@@ -20,7 +20,7 @@
     "telemetry": "astro telemetry"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.1",
+    "@astrojs/check": "^0.3.3",
     "astro": "^4.0.4",
     "typescript": "^5.3.3"
   },
