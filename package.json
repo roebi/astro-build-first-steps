@@ -22,7 +22,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "astro": "^4.5.5",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
     "husky": "^9.0.11",
